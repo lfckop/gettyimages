@@ -20,13 +20,13 @@ then you should do it like this:
 
 $ ./pagesget.sh "http://www.gettyimages.co.uk/search/events/563919255?editorialproduct=entertainment"
 
-important: in "$url", "" is needed
+attention: in "$url", "" is needed
 
 then in another terminal:
 
 $ ./killwget.sh 11
 
-important: the number 11 is the count of images in the site
+attention: the number 11 is the count of images in the site
 
 #More
 if you want to do it more thoroughly, you may just run it like this:
