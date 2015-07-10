@@ -17,6 +17,8 @@ do
         # download the images, after pages download finished
 	./imagesget.sh
 
+        # ring the bell when it's finished
+        echo -e "\a\a\a\a\a\a"
         exit 0
     fi
 done
