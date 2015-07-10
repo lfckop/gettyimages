@@ -35,7 +35,7 @@ $ ./auto.sh
 
 it will download liverpoolfc's latest training images automatically. 
 
-attention: if you want to download other images, you need to modify the grep keywords in ./rooturlget.sh
+attention: if you want to download other images, you need to change the grep keywords in the file ./rooturlget.sh
 
 #any problems? 
 please contact me: weizhou@mail.ustc.edu.cn
