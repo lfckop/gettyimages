@@ -9,7 +9,7 @@ fi
 
 while true
 do
-    num=$(tree www.gettyimages.co.uk/detail/ 2>/dev/null | grep files | awk '{print $3}')
+    num=$(find ./www.gettyimages.co.uk/detail/ -type f 2>/dev/null | wc -l | awk '{print $1}')
     if [ "$num" = "$1" ]; then
         sleep 5
         pkill -9 wget

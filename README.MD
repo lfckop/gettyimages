@@ -1,4 +1,4 @@
-this is a simple tool used to grab images from www.gettyimages.co.uk
+this is a small tool used to grab images from www.gettyimages.co.uk
 
 authored by zhouwei, on 2015-7-10
 
