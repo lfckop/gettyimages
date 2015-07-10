@@ -28,5 +28,14 @@ $ ./killwget.sh 11
 
 important: the number 11 is the count of images in the site
 
+#More
+if you want to do it more thoroughly, you may just run it like this:
+
+$ ./auto.sh
+
+it will download liverpoolfc's latest training images automatically. 
+
+attention: if you want to download other images, you need to modify the grep keywords in ./rooturlget.sh
+
 #any problems? 
 please contact me: weizhou@mail.ustc.edu.cn

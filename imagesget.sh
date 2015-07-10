@@ -23,6 +23,6 @@ rm -rf ./www.gettyimages.co.uk/
 rm -rf ./urlfile
 
 # count the images downloaded
-ls $imagedir | wc -l
+ls $imagedir | wc -l | awk '{print $1}'
 
 exit 0

@@ -15,10 +15,17 @@ do
         pkill -9 wget
 
         # download the images, after pages download finished
-	./imagesget.sh
+	result=$(./imagesget.sh)
+	echo "*****************************************"
+	if [ $result -eq $1 ]; then
+	    echo "   done! $result images downloaded!"
+        else
+	    echo "there are $1 images, but only $result images downloaded, you may restart the mission if you want"
+	fi
+	echo "*****************************************"
 
         # ring the bell when it's finished
-        echo -e "\a\a\a\a\a\a"
+        echo -e "\a\a\a\a\a\a\a\a\a\a"
         exit 0
     fi
 done
