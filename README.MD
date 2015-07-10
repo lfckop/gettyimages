@@ -11,8 +11,6 @@ images downloaded are in ./xxx-images/
 
 enjoy it!
 
-****************
-
 #Example:
 if you want to download the images in the site:
 
@@ -29,8 +27,6 @@ then in another terminal:
 $ ./killwget.sh 11
 
 important: the number 11 is the count of images in the site
-
-****************
 
 #any problems? 
 please contact me: weizhou@mail.ustc.edu.cn
