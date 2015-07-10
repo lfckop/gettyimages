@@ -14,8 +14,8 @@ do
         sleep 5
         pkill -9 wget
 
-        # download the images, after pagas download finished
-	./getimages.sh
+        # download the images, after pages download finished
+	./imagesget.sh
 
         exit 0
     fi

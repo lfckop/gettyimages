@@ -20,7 +20,7 @@ then you should do it like this:
 
 $ ./pagesget.sh "http://www.gettyimages.co.uk/search/events/563919255?editorialproduct=entertainment"
 
-important: "" is better needed
+important: in "$url", "" is needed
 
 then in another terminal:
 
