@@ -11,8 +11,11 @@ while true
 do
     num=$(find ./www.gettyimages.co.uk/detail/ -type f 2>/dev/null | wc -l | awk '{print $1}')
     if [ "$num" = "$1" ]; then
-        sleep 5
+        sleep 3
         pkill -9 wget
+	sleep 2
+
+	echo -e "\n******  just relax, I'm still working for you, please wait  ******\n"
 
         # download the images, after pages download finished
 	result=$(./imagesget.sh)

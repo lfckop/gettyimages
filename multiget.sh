@@ -13,8 +13,6 @@ do
     ./pagesget.sh $url &
 done
 
-sleep 600
-
 eval numOfImages='$'"$n"
 time ./killwget.sh $numOfImages
 
