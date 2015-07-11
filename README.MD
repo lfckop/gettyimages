@@ -22,7 +22,7 @@ then you should run it like this:
 
 ***attention***: in "url", "" is needed.
 
-***attention***: the number 11 is the count of images in the site.
+***attention***: the number 29 is the count of images in the site.
 
 *************************
 
