@@ -1,6 +1,7 @@
 #!/bin/bash
 
-wget http://www.gettyimages.co.uk/editorialimages/sport -O output >& /dev/null
+homepage="http://www.gettyimages.co.uk/editorialimages/sport"
+wget $homepage -O output >& /dev/null
 count=0
 while read line
 do
