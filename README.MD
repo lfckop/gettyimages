@@ -26,13 +26,13 @@ then you should run it like this:
 
 *************************
 
-*or*, if you want to download the images in the site(117 images, 2 pages):
+**or**, if you want to download the images in the site(117 images, 2 pages):
     
     http://www.gettyimages.co.uk/search/events/538759813?editorialproduct=liverpoolfc
 
 then you should run it like this:
 
-$ ./multiget.sh "http://www.gettyimages.co.uk/search/events/538759813?editorialproduct=liverpoolfc" "http://www.gettyimages.co.uk/search/events/538759813?excludenudity=true&family=editorial&page=2&phrase=&sort=best" 107
+    $ ./multiget.sh "http://www.gettyimages.co.uk/search/events/538759813?editorialproduct=liverpoolfc" "http://www.gettyimages.co.uk/search/events/538759813?excludenudity=true&family=editorial&page=2&phrase=&sort=best" 107
 
 ***attention***: "" is needed, 107 is the total count of images in 2 pages.
 
