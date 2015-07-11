@@ -4,7 +4,7 @@ authored by zhouwei, on 2015-7-10
 
 
 #Usage:
-    $ ./multiget.sh url… numOfImages
+    $ ./multiget.sh url... numOfImages
 
 images downloaded are in ./xxx-images/
 
