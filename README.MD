@@ -14,7 +14,7 @@ enjoy it!
 #Example:
 if you want to download the images in the site:
 
-    http://www.gettyimages.co.uk/search/events/563919255?editorialproduct=entertainment
+http://www.gettyimages.co.uk/search/events/563919255?editorialproduct=entertainment
 
 then you should run it like this:
 
@@ -28,7 +28,7 @@ then you should run it like this:
 
 **or**, if you want to download the images in the site(117 images, 2 pages):
     
-    http://www.gettyimages.co.uk/search/events/538759813?editorialproduct=liverpoolfc
+http://www.gettyimages.co.uk/search/events/538759813?editorialproduct=liverpoolfc
 
 then you should run it like this:
 
