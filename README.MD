@@ -18,7 +18,7 @@ http://www.gettyimages.co.uk/search/events/563919255?editorialproduct=entertainm
 
 then you should run it like this:
 
-    $ ./multiget.sh "http://www.gettyimages.co.uk/search/events/563919255?editorialproduct=entertainment" 11
+    $ ./multiget.sh "http://www.gettyimages.co.uk/search/events/563919255?editorialproduct=entertainment" 29
 
 ***attention***: in "url", "" is needed.
 
