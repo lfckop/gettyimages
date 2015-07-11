@@ -34,7 +34,7 @@ then you should run it like this:
 
     $ ./multiget.sh "http://www.gettyimages.co.uk/search/events/538759813?editorialproduct=liverpoolfc" "http://www.gettyimages.co.uk/search/events/538759813?excludenudity=true&family=editorial&page=2&phrase=&sort=best" 107
 
-***attention***: "" is needed, 107 is the total count of images in 2 pages.
+***attention***: "" is needed, 107 is the total count of images in the 2 pages.
 
 
 #More
