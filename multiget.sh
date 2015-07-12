@@ -1,19 +1,59 @@
 #!/bin/bash
 
-n="$#"
-
-if [ "$n" = 0 ]; then
-    echo "Usage: ./multiget.sh url... numOfImages"
+check=$(which wget)
+if [ "$check" = "" ]; then
+    echo "please install wget, exit!"
     exit 1
 fi
 
-for ((i=1;i<n;i++))
+trap 'rm -rf ./www.gettyimages.co.uk/ ./urlfile >&/dev/null; pkill -9 wget; exit 1' INT
+
+if [ "$1" = "" ]; then
+    echo "Usage: ./multiget.sh pageurl..."
+    exit 1
+fi
+
+# download image-pages from the pageurl
+for pageurl in "$@"
 do
-    eval url='$'"$i"
-    ./pagesget.sh $url &
+   ./pagesdownload.sh "$pageurl" 
 done
 
-eval numOfImages='$'"$n"
-time ./killwget.sh $numOfImages
+while true
+do
+    pgrep wget >&/dev/null
+    if [ "$?" = 1 ]; then
+	# pages download is finished
+	break
+    fi
+done
+
+echo -e "\n******  just relax, I'm still working for you, please wait  ******\n"
+
+# download the images, after pages download finished
+imagedir=$(./imagesdownload.sh)
+
+while true
+do
+    pgrep wget >&/dev/null
+    if [ "$?" = 1 ]; then
+        # images download is finished
+        break
+    fi
+done
+
+# clean temp files
+rm -rf ./www.gettyimages.co.uk/
+rm -rf ./urlfile
+
+# count the images downloaded
+result=$(ls $imagedir | wc -l | awk '{print $1}')
+
+echo "*****************************************"
+echo "   done! $result images downloaded!"
+echo "*****************************************"
+
+# ring the bell when it's finished
+echo -e "\a\a\a\a\a\a\a\a\a\a"
 
 exit 0

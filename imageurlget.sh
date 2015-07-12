@@ -1,4 +1,5 @@
 #!/bin/bash
+# get the image url from each page
 
 keyword="data-gallery_comp1024_url"
 while read line
