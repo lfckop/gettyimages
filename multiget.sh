@@ -1,5 +1,7 @@
 #!/bin/bash
 
+begin=$(date +%s)
+
 check=$(which wget)
 if [ "$check" = "" ]; then
     echo "please install wget, exit!"
@@ -55,5 +57,20 @@ echo "*****************************************"
 
 # ring the bell when it's finished
 echo -e "\a\a\a\a\a\a\a\a\a\a"
+
+end=$(date +%s)
+timeused=$((end-begin))
+if [ $timeused -lt 60 ]; then
+    echo "******  time consumed: $timeused seconds  ******"
+else
+    min=$((timeused/60))
+    sec=$((timeused-60*min))
+    if [ $min -eq 1 ]; then
+        echo "******  time consumed: 1 minute $sec seconds  ******"
+    else
+	echo "******  time consumed: $min minutes $sec seconds  ******"
+    fi
+fi
+echo ""
 
 exit 0
