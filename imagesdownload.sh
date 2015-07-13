@@ -14,19 +14,14 @@ set $(date)
 imagedir="$4-$2-images"
 mkdir $imagedir
 
-# get image urls from the image pages
-for page in $(find $path -type f)
-do 
-    ./imageurlget.sh < $page
-done > urlfile
-
 # download the images based on image-urls
 i=1
-while read line
+for page in $(find $path -type f)
 do 
-    wget -q --timeout=6 -O ./$imagedir/${i}.jpg $line >&/dev/null &
+    imageurl=$(./imageurlget.sh < $page)
+    wget -q --timeout=6 -O ./$imagedir/${i}.jpg $imageurl >&/dev/null &
     ((i++))
-done < urlfile
+done 
 
 echo "$imagedir"
 

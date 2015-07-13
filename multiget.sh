@@ -45,8 +45,7 @@ do
 done
 
 # clean temp files
-rm -rf ./www.gettyimages.co.uk/
-rm -rf ./urlfile
+rm -rf ./www.gettyimages.co.uk/ >&/dev/null
 
 # count the images downloaded
 result=$(ls $imagedir | wc -l | awk '{print $1}')
