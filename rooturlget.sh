@@ -7,7 +7,9 @@ count=0
 while read line
 do
 #    echo $line | grep -i "liverpool" | grep -i "training session" >& /dev/null
-    echo $line | grep -i "UNS: In Focus: County Cricket Grounds 2015" >& /dev/null
+
+    echo $line | grep -i "THA: Liverpool Arrives In Bangkok For" >& /dev/null
+#    echo $line | grep -i "UNS: In Focus: County Cricket Grounds 2015" >& /dev/null
     if [ "$?" = 0 ]; then
         count=1
 	continue
