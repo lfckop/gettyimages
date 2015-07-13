@@ -25,17 +25,5 @@ then you should run it like this:
 ***attention***: in "pageurl", **""** is needed.
 
 
-#More
-if you want to make it more thoroughly, you may just run it like this:
-
-    $ ./auto.sh
-
-it will download liverpoolfc's latest training images automatically. 
-
-***attention***: if you want to download other images, you need to **change** the homepage site and the grep keywords in the file ./rooturlget.sh 
-
-***attention***: this way is **not** recommended to use, and it may only be used by myself.
-
-
 #any problems? 
 please contact me: weizhou@mail.ustc.edu.cn
