@@ -12,7 +12,7 @@ enjoy it!
 
 
 #Example:
-find a item(like sports, entertainment, news) in the http://www.gettyimages.co.uk/editorial-images, and then choose one event.
+find an item(like sports, entertainment, news) in the http://www.gettyimages.co.uk/editorial-images, and then choose one event.
 
 for example, if you want to download the images in the site:
 

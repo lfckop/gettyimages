@@ -20,6 +20,8 @@ for page in $(find $path -type f)
 do 
     imageurl=$(./imageurlget.sh < $page)
     wget -q --timeout=6 -O ./$imagedir/${i}.jpg $imageurl >&/dev/null &
+    #pagename=$(echo $page | awk -F "/" '{print $9}')
+    #wget -q --timeout=6 -O ./$imagedir/${pagename}.jpg $imageurl >&/dev/null &
     ((i++))
 done 
 
