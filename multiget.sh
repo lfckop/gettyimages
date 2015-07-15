@@ -49,6 +49,7 @@ rm -rf ./www.gettyimages.co.uk/ >&/dev/null
 
 # count the images downloaded
 result=$(ls $imagedir | wc -l | awk '{print $1}')
+mv $imagedir "$result""-""$imagedir"
 
 echo "*****************************************"
 echo "   done! $result images downloaded!"

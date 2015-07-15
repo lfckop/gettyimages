@@ -20,9 +20,7 @@ http://www.gettyimages.co.uk/search/events/563919255?editorialproduct=entertainm
 
 then you should run it like this:
 
-    $ ./multiget.sh "http://www.gettyimages.co.uk/search/events/563919255?editorialproduct=entertainment"
-
-***attention***: in "pageurl", **""** is needed.
+    $ ./multiget.sh http://www.gettyimages.co.uk/search/events/563919255?editorialproduct=entertainment
 
 
 #any problems? 
