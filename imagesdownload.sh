@@ -3,9 +3,7 @@
 
 # check the path
 path="/Users/zhouwei/gettyimages/www.gettyimages.co.uk/detail/news-photo"
-if [ -d $path ]; then
-    :
-else
+if [ ! -d $path ]; then
     echo "error: $path not exist"
     exit 1
 fi
