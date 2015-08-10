@@ -8,8 +8,7 @@ if [ ! -d $path ]; then
     exit 1
 fi
 
-set $(date)
-imagedir="images-$2-$4"
+imagedir="images-"$(date "+%Y%m%d-%H时%M分%S秒")
 mkdir $imagedir
 
 # download the images based on image-urls
