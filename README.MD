@@ -16,12 +16,12 @@ Find an item(like sports, entertainment, news) in the http://www.gettyimages.co.
 
 For example, if you want to download the images in the site:
 
-http://www.gettyimages.co.uk/search/events/563919255?editorialproduct=entertainment
+http://www.gettyimages.co.uk/search/events/563919255?family=editorial&sort=best&excludenudity=true&phrase=
 
 then you should run it like this:
 
     $ ./multiget.sh "http://www.gettyimages.co.uk/search/events/563919255?family=editorial&sort=best&excludenudity=true&phrase="
-the url **must** be put in **""**.
+the site **must** be put in **""**.
 
 
 #Any problems? 
