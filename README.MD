@@ -1,6 +1,6 @@
-this is a small tool used to grab images from www.gettyimages.co.uk, and it's still evolving.
+This is a small tool used to grab images from www.gettyimages.co.uk, and it's still evolving.
 
-authored by zhouwei, on 2015-7-10
+Authored by zhouwei, on 2015-7-10
 
 
 #Usage:
@@ -8,20 +8,21 @@ authored by zhouwei, on 2015-7-10
 
 images downloaded are in ./xxx-images/
 
-enjoy it!
+Enjoy it!
 
 
 #Example:
-find an item(like sports, entertainment, news) in the http://www.gettyimages.co.uk/editorial-images, and then choose one event.
+Find an item(like sports, entertainment, news) in the http://www.gettyimages.co.uk/editorial-images, and then choose one event.
 
-for example, if you want to download the images in the site:
+For example, if you want to download the images in the site:
 
 http://www.gettyimages.co.uk/search/events/563919255?editorialproduct=entertainment
 
 then you should run it like this:
 
-    $ ./multiget.sh http://www.gettyimages.co.uk/search/events/563919255?editorialproduct=entertainment
+    $ ./multiget.sh "http://www.gettyimages.co.uk/search/events/563919255?family=editorial&sort=best&excludenudity=true&phrase="
+the url *must* be put in "".
 
 
-#any problems? 
-please contact me: weizhou@mail.ustc.edu.cn
+#Any problems? 
+Please contact me: weizhou@mail.ustc.edu.cn
