@@ -21,7 +21,7 @@ http://www.gettyimages.co.uk/search/events/563919255?editorialproduct=entertainm
 then you should run it like this:
 
     $ ./multiget.sh "http://www.gettyimages.co.uk/search/events/563919255?family=editorial&sort=best&excludenudity=true&phrase="
-the url *must* be put in "".
+the url **must** be put in "".
 
 
 #Any problems? 
