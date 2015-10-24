@@ -10,28 +10,14 @@ output="tmpfile-$$"
 wget -q -O "$output" "$1"
 pagenum=$(./pagenumget.sh < $output)
 if [ "$pagenum" -gt 6 ]; then pagenum=6; fi
-# attention: need to modify!
-#if echo "$1" | grep "phrase" >&/dev/null ; then
-    wget -q -r -l 1 --accept-regex='http://www.gettyimages.co.uk/detail/news-photo/.+/[0-9]+$' "$1" &
-    for ((i=2;i<="$pagenum";i++))
-    do
-	pageurl=$(echo "$1" | awk -F "?" '{print $1}')
-	pageurl="$pageurl""?excludenudity=true&family=editorial&page=""$i""&phrase=&sort=best"
-	wget -q -r -l 1 --accept-regex='http://www.gettyimages.co.uk/detail/news-photo/.+/[0-9]+$' "$pageurl" &
-    done
-#else
-#    wget -q -r -l 1 "$1" &
-#    for ((i=2;i<="$pagenum";i++))
-#    do
-#	pageurl="$1"
-#	if echo $pageurl | grep page >&/dev/null ; then
-#	    pageurl=${pageurl/page=1/page="$i"}
-#	else
-#	    pageurl="${pageurl}&page=${i}"
-#	fi
-#	wget -q -r -l 1 "$pageurl" &
- #   done
-#fi
+#pagenum=1
+
+wget -q -r -l 1 --accept-regex='http://www.gettyimages.co.uk/detail/news-photo/.+/[0-9]+$' "$1" &
+for ((i=2;i<="$pagenum";i++))
+do
+    pageurl="$1""&page=$i"
+    wget -q -r -l 1 --accept-regex='http://www.gettyimages.co.uk/detail/news-photo/.+/[0-9]+$' "$pageurl" &
+done
 
 rm -rf $output
 
