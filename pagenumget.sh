@@ -3,7 +3,7 @@
 
 while read line
 do
-    echo $line | grep -E "/> of [[:digit:]]+</" >&/dev/null
+    echo $line | grep -E "/> of [[:digit:]]+<" >&/dev/null
     if [ "$?" = 0 ]; then
 	#set $line
 	#echo $3
