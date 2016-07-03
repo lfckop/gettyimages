@@ -1,4 +1,4 @@
-# I'm broken! Fix me!!!
+# I'm broken! Fix me!!! 2016-07-01
 
 This is a small tool used to grab images from www.gettyimages.co.uk, and it's still evolving.
 
